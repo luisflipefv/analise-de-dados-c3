@@ -130,6 +130,3 @@ jupyter notebook
 
 ---
 
-## 📝 Licença
-
-Projeto acadêmico — FAESA Centro Universitário, 2024.
