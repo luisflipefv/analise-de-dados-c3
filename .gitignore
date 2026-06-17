@@ -16,4 +16,4 @@ env/
 .DS_Store
 Thumbs.db
 
-.requirements/
+#.requirements/
