@@ -22,18 +22,20 @@ O objetivo é explorar o dataset de preços de casas nos Estados Unidos (Kaggle)
 ## 📂 Estrutura do Repositório
 
 ```
-house-prices-analysis/
+analise-de-dados-c3/
 │
 ├── data/
 │   ├── train.csv              # Dataset principal (Kaggle)
-│   └── test.csv               # Dataset de teste (Kaggle)
+│   ├── test.csv               # Dataset de teste (Kaggle)
+│   └── train_processed.csv    # Dataset processado pelo notebook 01
 │
 ├── notebooks/
-│   ├── 01_regressao.ipynb           # Regressão Linear Simples e Múltipla
-│   ├── 02_classificacao.ipynb       # Regressão Logística e Random Forest
-│   ├── 03_clusterizacao.ipynb       # K-Means, PCA e t-SNE
-│   ├── 04_associacao_outliers.ipynb # Apriori e Local Outlier Factor
-│   └── 05_visualizacao.ipynb        # Visualizações e Storytelling
+│   ├── 01_feature_engineering.ipynb  # EDA & Feature Engineering
+│   ├── 02_regressao.ipynb            # Regressão Linear Simples e Múltipla
+│   ├── 03_classificacao.ipynb        # Regressão Logística e Random Forest
+│   ├── 04_clusterizacao.ipynb        # K-Means, PCA e t-SNE
+│   ├── 05_associacao_outliers.ipynb  # Apriori e Local Outlier Factor
+│   └── 06_visualizacao.ipynb         # Visualizações e Storytelling
 │
 ├── plots/                     # Gráficos gerados pelos notebooks
 │
@@ -55,35 +57,35 @@ O dataset contém **1.460 registros** e **81 variáveis** com características d
 
 ## 🔬 Etapas do Projeto
 
-### 1. Análise Exploratória & Feature Engineering
+### 1. EDA & Feature Engineering (`01_feature_engineering.ipynb`)
 - Identificação de variáveis numéricas e categóricas
 - Tratamento de valores nulos e outliers
-- Criação e transformação de features
+- Normalização (`StandardScaler`) e codificação de categóricas (`OneHotEncoder`)
+- Exportação do dataset processado em `data/train_processed.csv`
 
-### 2. Regressão Linear (`01_regressao.ipynb`)
+### 2. Regressão Linear (`02_regressao.ipynb`)
 - Divisão treino/teste 80/20
 - Regressão Linear Simples (`GrLivArea → SalePrice`)
 - Regressão Linear Múltipla (top 10 features por correlação)
 - Métricas: MAE, RMSE, R²
 - Plots: Preditos vs Reais, Análise de Resíduos
 
-### 3. Classificação (`02_classificacao.ipynb`)
+### 3. Classificação (`03_classificacao.ipynb`)
 - Criação de variável binária a partir do `SalePrice`
 - Modelos: Regressão Logística e Random Forest
 - Métricas: Accuracy, Precision, Recall, F1-Score, Matriz de Confusão
 
-### 4. Clusterização & Redução de Dimensionalidade (`03_clusterizacao.ipynb`)
-- PCA para 2 dimensões
-- t-SNE para visualização
-- K-Means com Elbow Method
+### 4. Clusterização & Redução de Dimensionalidade (`04_clusterizacao.ipynb`)
+- Redução de dimensionalidade: PCA para 2 dimensões e t-SNE para visualização
+- Clusterização: K-Means com Elbow Method
 - Interpretação dos perfis de cada cluster
 
-### 5. Regras de Associação & Outliers (`04_associacao_outliers.ipynb`)
+### 5. Regras de Associação & Outliers (`05_associacao_outliers.ipynb`)
 - Binarização de features
 - Algoritmo Apriori para regras de associação
 - Local Outlier Factor (LOF) para detecção de anomalias
 
-### 6. Visualização de Dados (`05_visualizacao.ipynb`)
+### 6. Visualização de Dados (`06_visualizacao.ipynb`)
 - Distribuições, heatmaps e scatter plots
 - Painel consolidado de métricas e clusters
 - Storytelling da análise
@@ -111,7 +113,7 @@ cd analise-de-dados-c3
 
 # 2. Baixe o dataset do Kaggle e coloque os arquivos em data/
 
-# 3. Abra os notebooks em ordem
+# 3. Abra os notebooks em ordem (01 → 06)
 jupyter notebook
 ```
 
@@ -129,4 +131,3 @@ jupyter notebook
 | `mlxtend` | Algoritmo Apriori |
 
 ---
-
