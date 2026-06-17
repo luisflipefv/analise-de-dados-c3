@@ -29,7 +29,8 @@ house-prices-analysis/
 │   └── test.csv               # Dataset de teste (Kaggle)
 │
 ├── notebooks/
-│   ├── 01_regressao.ipynb           # Regressão Linear + Classificação (Log. / Random Forest)
+│   ├── 01_regressao.ipynb           # Regressão Linear Simples e Múltipla
+│   ├── 02_classificacao.ipynb       # Regressão Logística e Random Forest
 │   ├── 03_clusterizacao.ipynb       # K-Means, PCA e t-SNE
 │   ├── 04_associacao_outliers.ipynb # Apriori e Local Outlier Factor
 │   └── 05_visualizacao.ipynb        # Visualizações e Storytelling
@@ -66,7 +67,7 @@ O dataset contém **1.460 registros** e **81 variáveis** com características d
 - Métricas: MAE, RMSE, R²
 - Plots: Preditos vs Reais, Análise de Resíduos
 
-### 3. Classificação (`01_regressao.ipynb`)
+### 3. Classificação (`02_classificacao.ipynb`)
 - Criação de variável binária a partir do `SalePrice`
 - Modelos: Regressão Logística e Random Forest
 - Métricas: Accuracy, Precision, Recall, F1-Score, Matriz de Confusão
