@@ -27,7 +27,7 @@ analise-de-dados-c3/
 ├── data/
 │   ├── train.csv              # Dataset principal (Kaggle)
 │   ├── test.csv               # Dataset de teste (Kaggle)
-│   └── train_processed.csv    # Gerado pelo notebook 01 (Feature Engineering)
+│   └── train_processed.csv    # Dataset processado pelo notebook 01
 │
 ├── notebooks/
 │   ├── 01_feature_engineering.ipynb  # EDA & Feature Engineering
@@ -42,8 +42,6 @@ analise-de-dados-c3/
 └── README.md
 ```
 
-> ⚠️ Execute os notebooks **em ordem** (01 → 06). O notebook `01` gera o `train_processed.csv` utilizado pelos demais.
-
 ---
 
 ## 📊 Dataset
@@ -54,22 +52,6 @@ Disponível em: [kaggle.com/c/house-prices-advanced-regression-techniques](https
 O dataset contém **1.460 registros** e **81 variáveis** com características de casas vendidas em Ames, Iowa (EUA), incluindo área, qualidade, número de cômodos, ano de construção, entre outras.
 
 > ⚠️ Os arquivos de dados **não estão incluídos** neste repositório. Faça o download diretamente pelo link acima e coloque os arquivos dentro da pasta `data/`.
-
----
-
-## 🎯 Critérios de Avaliação (8,0 pontos)
-
-| # | Critério | Pts | Notebook |
-|---|---|---|---|
-| 1 | Análise exploratória de dados e feature engineering | 1,0 | `01_feature_engineering.ipynb` |
-| 2 | Aprendizagem supervisionada: regressão | 1,0 | `02_regressao.ipynb` |
-| 3 | Aprendizagem supervisionada: classificação | 1,0 | `03_classificacao.ipynb` |
-| 4 | Aprendizagem não supervisionada: clusterização | 1,0 | `04_clusterizacao.ipynb` |
-| 5 | Aprendizagem não supervisionada: redução de dimensionalidade | 1,0 | `04_clusterizacao.ipynb` |
-| 6 | Aprendizagem não supervisionada: associação e outlier | 1,0 | `05_associacao_outliers.ipynb` |
-| 7 | Visualização de dados | 1,0 | `06_visualizacao.ipynb` |
-| 8 | Organização do repositório GitHub | 0,5 | — |
-| 9 | Apresentação do trabalho | 0,5 | — |
 
 ---
 
@@ -93,17 +75,17 @@ O dataset contém **1.460 registros** e **81 variáveis** com características d
 - Modelos: Regressão Logística e Random Forest
 - Métricas: Accuracy, Precision, Recall, F1-Score, Matriz de Confusão
 
-### 4 & 5. Clusterização & Redução de Dimensionalidade (`04_clusterizacao.ipynb`)
-- **Redução de Dimensionalidade:** PCA para 2 dimensões e t-SNE para visualização
-- **Clusterização:** K-Means com Elbow Method
+### 4. Clusterização & Redução de Dimensionalidade (`04_clusterizacao.ipynb`)
+- Redução de dimensionalidade: PCA para 2 dimensões e t-SNE para visualização
+- Clusterização: K-Means com Elbow Method
 - Interpretação dos perfis de cada cluster
 
-### 6. Regras de Associação & Outliers (`05_associacao_outliers.ipynb`)
+### 5. Regras de Associação & Outliers (`05_associacao_outliers.ipynb`)
 - Binarização de features
 - Algoritmo Apriori para regras de associação
 - Local Outlier Factor (LOF) para detecção de anomalias
 
-### 7. Visualização de Dados (`06_visualizacao.ipynb`)
+### 6. Visualização de Dados (`06_visualizacao.ipynb`)
 - Distribuições, heatmaps e scatter plots
 - Painel consolidado de métricas e clusters
 - Storytelling da análise
