@@ -51,8 +51,6 @@ Disponível em: [kaggle.com/c/house-prices-advanced-regression-techniques](https
 
 O dataset contém **1.460 registros** e **81 variáveis** com características de casas vendidas em Ames, Iowa (EUA), incluindo área, qualidade, número de cômodos, ano de construção, entre outras.
 
-> ⚠️ Os arquivos de dados **não estão incluídos** neste repositório. Faça o download diretamente pelo link acima e coloque os arquivos dentro da pasta `data/`.
-
 ---
 
 ## 🔬 Etapas do Projeto
@@ -77,7 +75,7 @@ O dataset contém **1.460 registros** e **81 variáveis** com características d
 
 ### 4. Clusterização & Redução de Dimensionalidade (`04_clusterizacao.ipynb`)
 - Redução de dimensionalidade: PCA para 2 dimensões e t-SNE para visualização
-- Clusterização: K-Means com Elbow Method
+- Clusterização: K-Means com Elbow Method e métrica de validação Silhouette Score
 - Interpretação dos perfis de cada cluster
 
 ### 5. Regras de Associação & Outliers (`05_associacao_outliers.ipynb`)
@@ -111,9 +109,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn mlxtend
 git clone https://github.com/luisflipefv/analise-de-dados-c3.git
 cd analise-de-dados-c3
 
-# 2. Baixe o dataset do Kaggle e coloque os arquivos em data/
-
-# 3. Abra os notebooks em ordem (01 → 06)
+# 2. Abra os notebooks em ordem (01 → 06)
 jupyter notebook
 ```
 
