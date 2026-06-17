@@ -1,0 +1,14 @@
+# Análise de dados - House Prices
+# Bibliotecas de dados e ML
+pandas
+numpy
+scikit-learn
+mlxtend
+
+# Visualização
+matplotlib
+seaborn
+
+# Ambiente de notebooks
+jupyter
+ipykernel
