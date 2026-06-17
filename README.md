@@ -58,6 +58,7 @@ O dataset contém **1.460 registros** e **81 variáveis** com características d
 ### 1. EDA & Feature Engineering (`01_feature_engineering.ipynb`)
 - Identificação de variáveis numéricas e categóricas
 - Tratamento de valores nulos e outliers
+- Criação de features derivadas: área total, área de varandas, banheiros totais, idade do imóvel, tempo desde reforma e indicadores de garagem, porão, lareira e piscina
 - Normalização (`StandardScaler`) e codificação de categóricas (`OneHotEncoder`)
 - Exportação do dataset processado em `data/train_processed.csv`
 
