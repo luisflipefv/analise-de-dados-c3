@@ -6,19 +6,6 @@ O objetivo é explorar o dataset de preços de casas nos Estados Unidos (Kaggle)
 
 ---
 
-## 👥 Grupo
-
-| Membro | Responsabilidade |
-|--------|-----------------|
-| Vitor | EDA & Feature Engineering, Integração Final & Organização do GitHub |
-| Luis Felipe | Regressão Linear & Avaliação |
-| Emanuel | Classificação (Regressão Logística / Random Forest) |
-| Rogeres | Clusterização & Redução de Dimensionalidade |
-| Alessandro | Regras de Associação & Detecção de Outliers |
-| Natalia | Visualização de Dados & Storytelling |
-
----
-
 ## 📂 Estrutura do Repositório
 
 ```
