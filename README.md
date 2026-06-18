@@ -1,6 +1,6 @@
 # 🏠 House Prices — Data Analysis & Machine Learning
 
-Projeto desenvolvido como avaliação da disciplina de **Data Analysis and Machine Learning** — FAESA Centro Universitário.
+Projeto desenvolvido como avaliação da disciplina de **Análise de Dados** — FAESA Centro Universitário.
 
 O objetivo é explorar o dataset de preços de casas nos Estados Unidos (Kaggle) aplicando técnicas de análise exploratória, feature engineering, aprendizado supervisionado e não supervisionado.
 
