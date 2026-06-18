@@ -10,23 +10,8 @@ venv/
 env/
 
 # VS Code
-# Jupyter
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/
-
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-env/
-
-# VS Code
 .vscode/
 
 # OS
 .DS_Store
 Thumbs.db
-scripts/
-
-.alt/
